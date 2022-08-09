@@ -163,8 +163,15 @@ const wordsCount = [
   "matter",
 ];
 
-function howManyTimes(wordsCount) {
-  
+function howManyTimes(wordsCount, wordToSearch) {
+  let count = 0;
+
+  for (let i = 0; i < wordsCount.length; i++) {
+    if (wordsCount[i] === wordToSearch) {
+      count++;
+    }
+  }
+  return count;
 }
 
 // Iteration #8: Bonus
